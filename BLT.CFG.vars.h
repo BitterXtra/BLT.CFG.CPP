@@ -5197,3 +5197,4 @@ string v_Rhapsody = "// >> READ: Want to release a modified version of this perf
 "// You can view a detailed log of the exact changes at https://github.com/RhapsodySL/perfconfig/commits/master";
 
 string c_Language = "1";
+string c_GQuality = "4";

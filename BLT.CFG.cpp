@@ -12,12 +12,31 @@ using std::endl;
 
 int masterComfigQuality() 
 {
+    system("cls");
+
+    cout << s_GraphicQuality << endl;
+    cout << s_Mastercomfig_VeryLow << endl;
+    cout << s_Mastercomfig_Low << endl;
+    cout << s_Mastercomfig_MediumLow << endl;
+    cout << s_Mastercomfig_Medium << endl;
+    cout << s_Mastercomfig_MediumHigh << endl;
+    cout << s_Mastercomfig_High << endl;
+    cout << s_Mastercomfig_Ultra << endl;
+    cout << s_GraphicEndText;
+    cin >> c_GQuality;
 
     return 1;
 }
 
 int comangliaQuality()
 {
+    system("cls");
+
+    cout << s_Comanglia_Toaster << endl;
+    cout << s_Comanglia_Stability << endl;
+    cout << s_Comanglia_Cinema << endl;
+    cout << s_GraphicEndText;
+    cin >> c_GQuality;
 
     return 1;
 }
@@ -167,6 +186,10 @@ int main()
         s_Mastercomfig_MediumLow = s_Mastercomfig_MediumLow_Tr;
         s_Mastercomfig_Ultra = s_Mastercomfig_Ultra_Tr;
         s_Mastercomfig_VeryLow = s_Mastercomfig_VeryLow_Tr;
+        s_GraphicQuality = s_GraphicQuality_Tr;
+        s_Comanglia_Cinema = s_Comanglia_Cinema_Tr;
+        s_Comanglia_Stability = s_Comanglia_Stability_Tr;
+        s_Comanglia_Toaster = s_Comanglia_Toaster_Tr;
     }
     else
     {
@@ -189,6 +212,10 @@ int main()
         s_Mastercomfig_MediumLow = s_Mastercomfig_MediumLow_Eng;
         s_Mastercomfig_Ultra = s_Mastercomfig_Ultra_Eng;
         s_Mastercomfig_VeryLow = s_Mastercomfig_VeryLow_Eng;
+        s_GraphicQuality = s_GraphicQuality_Eng;
+        s_Comanglia_Cinema = s_Comanglia_Cinema_Eng;
+        s_Comanglia_Stability = s_Comanglia_Stability_Eng;
+        s_Comanglia_Toaster = s_Comanglia_Toaster_Eng;
     }
     
 
