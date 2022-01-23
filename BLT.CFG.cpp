@@ -25,6 +25,8 @@ int masterComfigQuality()
     cout << s_GraphicEndText;
     cin >> c_GQuality;
 
+    b_Mastercomfig = true;
+
     return 1;
 }
 
@@ -38,36 +40,48 @@ int comangliaQuality()
     cout << s_GraphicEndText;
     cin >> c_GQuality;
 
+    b_Comanglia = true;
+
     return 1;
 }
 
 int m0reQuality()
 {
     // Has No Options
+    b_M0re = true;
+
     return 1;
 }
 
 int b4nnyQuality()
 {
     // Has No Options
+    b_B4nny = true;
+
     return 1;
 }
 
 int chrisQuality()
 {
     // Has No Options
+    b_Chris = true;
+
     return 1;
 }
 
 int rhapsodyQuality()
 {
     // Has No Options
+    b_Rhapsody = true;
+
     return 1;
 }
 
 int noneQuality()
 {
     // Has No Options
+    b_None = true;
+
     return 1;
 }
 

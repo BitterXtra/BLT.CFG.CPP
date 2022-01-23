@@ -5198,3 +5198,11 @@ string v_Rhapsody = "// >> READ: Want to release a modified version of this perf
 
 string c_Language = "1";
 string c_GQuality = "4";
+
+bool b_Mastercomfig = false;
+bool b_Comanglia = false;
+bool b_M0re = false;
+bool b_B4nny = false;
+bool b_Chris = false;
+bool b_Rhapsody = false;
+bool b_None = false;
