@@ -2,6 +2,8 @@
 #include <string>
 #include <conio.h>
 
+#include "nlohmann/json.hpp"
+
 #include "BLT.CFG.vars.h"
 #include "BLT.CFG.langs.h"
 
@@ -128,6 +130,85 @@ int getOption()
     cin >> c_HideHudDuringFreezecam_Temp;
     cout << s_PyrovisionSpec << endl;
     cin >> c_PyrovisionSpec_Temp;
+    cout << s_PyrovisBorder << endl;
+    cout << s_PyrovisBorderMode0 << endl;
+    cout << s_PyrovisBorderMode1 << endl;
+    cout << s_PyrovisBorderMode2 << endl;
+    cin >> c_PyrovisBorder_Temp;
+    cout << s_PyrovisDistort << endl;
+    cin >> c_PyrovisDistort_Temp;
+    cout << s_PyrovisSkyboxDOF << endl;
+    cin >> c_PyrovisSkyboxDOF_Temp;
+    cout << s_Romevision;
+    cin >> c_Romevision_Temp;
+    cout << s_DisableFloatingHealthBar << endl;
+    cin >> c_DisableFloatingHealthBar_Temp;
+    cout << s_TargetIDAlpha << endl;
+    cin >> c_TargetIDAlpha_Temp;
+    cout << s_ContractsUI << endl;
+    cin >> c_ContractsUI_Temp;
+    cout << s_ContractsUIComp << endl;
+    cin >> c_ContractsUIComp_Temp;
+    cout << s_MouseOnScoreboard << endl;
+    cin >> c_MouseOnScoreboard_Temp;
+    cout << s_PingAsText << endl;
+    cin >> c_PingAsText_Temp;
+    cout << s_AlternateClass << endl;
+    cin >> c_AlternateClass_Temp;
+    cout << s_TeamStatusDisplay << endl;
+    cin >> c_TeamStatusDisplay_Temp;
+    cout << s_DisableWeather << endl;
+    cin >> c_DisableWeather_Temp;
+    cout << s_DisableHTMLMotd << endl;
+    cin >> c_DisableHTMLMotd_Temp;
+    cout << s_Viewmodels << endl;
+    cin >> c_Viewmodels_Temp;
+    cout << s_ViewmodelsMini << endl;
+    cin >> c_ViewmodelsMini_Temp;
+    cout << s_ViewmodelsFOV << endl;
+    cin >> c_ViewmodelsFOV_Temp;
+    cout << s_ViewmodelsFlip << endl;
+    cin >> c_ViewmodelsFlip_Temp;
+    cout << s_RespawnOnLoadoutChange << endl;
+    cin >> c_RespawnOnLoadoutChange_Temp;
+    cout << s_SuicideOnClassChange << endl;
+    cin >> c_SuicideOnClassChange_Temp;
+    cout << s_DeleteTempOnShut << endl;
+    cin >> c_DeleteTempOnShut_Temp;
+    cout << s_CloseServerBrowserAfterConnect << endl;
+    cin >> c_CloseServerBrowserAfterConnect_Temp;
+    cout << s_SyncSteamCloud << endl;
+    cin >> c_SyncSteamCloud_Temp;
+    cout << s_ShowTradeRequests << endl;
+    cout << s_ShowTradeRequests0 << endl;
+    cout << s_ShowTradeRequests1 << endl;
+    cout << s_ShowTradeRequests2 << endl;
+    cout << s_ShowTradeRequests3 << endl;
+    cin >> c_ShowTradeRequests;
+    cout << s_RawMouse << endl;
+    cin >> c_RawMouse_Temp;
+    cout << s_Sensitivity << endl;
+    cin >> c_Sensitivity_Temp;
+    cout << s_AudioQuality << endl;
+    cin >> c_AudioQuality_Temp;
+    cout << s_ClosedCaption << endl;
+    cin >> c_ClosedCaption_Temp;
+    cout << s_SilenceOnBackground << endl;
+    cin >> c_SilenceOnBackground_Temp;
+    cout << s_MicrophoneGain << endl;
+    cin >> c_MicrophoneGain_Temp;
+    cout << s_NullcancelMove << endl;
+    cin >> c_NullcancelMove_Temp;
+    cout << s_Interp << endl;
+    cin >> c_Interp_Temp;
+    cout << s_InterpRatio << endl;
+    cin >> c_InterpRatio_Temp;
+    cout << s_CMDrate << endl;
+    cin >> c_CMDrate_Temp;
+    cout << s_UpdateRate << endl;
+    cin >> c_UpdateRate_Temp;
+    cout << s_Rate << endl;
+    cin >> c_Rate_Temp;
 
     return 1;
 }
