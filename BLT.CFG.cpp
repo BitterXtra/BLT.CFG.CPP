@@ -10,6 +10,128 @@ using std::string;
 using std::cin;
 using std::endl;
 
+int getOption() 
+{
+    system("cls");
+
+    cout << s_EnableVoiceChat << endl;
+    cin >> c_EnableVoiceChat_Temp;
+    cout << s_EnableTextChat << endl;
+    cin >> c_EnableTextChat_Temp;
+    cout << s_AutoReload << endl;
+    cin >> c_AutoReload_Temp;
+    cout << s_FastSwitch << endl;
+    cin >> c_FastSwitch_Temp;
+    cout << s_Hitsound << endl;
+    cin >> c_Hitsound_Temp;
+    cout << s_HitsoundType << endl;
+    //cin >> ;
+    cout << s_HitsoundType1 << endl;
+    //cin >> ;
+    cout << s_HitsoundType2 << endl;
+    //cin >> ;
+    cout << s_HitsoundType3 << endl;
+    //cin >> ;
+    cout << s_HitsoundType4 << endl;
+    //cin >> ;
+    cout << s_HitsoundType5 << endl;
+    //cin >> ;
+    cout << s_HitsoundType6 << endl;
+    //cin >> ;
+    cout << s_HitsoundType7 << endl;
+    //cin >> ;
+    cout << s_HitsoundType8 << endl;
+    //cin >> ;
+    cout << s_HitsoundType9 << endl;
+    cin >> c_HitsoundType_Temp;
+    cout << s_HitsoundLowDmgPitch << endl;
+    cin >> c_HitsoundLowDmgPitch_Temp;
+    cout << s_HitsoundHighDmgPitch << endl;
+    cin >> c_HitsoundHighDmgPitch_Temp;
+    cout << s_Killsound << endl;
+    cin >> c_Killsound_Temp;
+    cout << s_KillsoundVolume << endl;
+    cin >> c_KillsoundVolume_Temp;
+    cout << s_KillsoundType << endl;
+    //cin >> ;
+    cout << s_KillsoundType1 << endl;
+    //cin >> ;
+    cout << s_KillsoundType2 << endl;
+    //cin >> ;
+    cout << s_KillsoundType3 << endl;
+    //cin >> ;
+    cout << s_KillsoundType4 << endl;
+    //cin >> ;
+    cout << s_KillsoundType5 << endl;
+    //cin >> ;
+    cout << s_KillsoundType6 << endl;
+    //cin >> ;
+    cout << s_KillsoundType7 << endl;
+    //cin >> ;
+    cout << s_KillsoundType8 << endl;
+    //cin >> ;
+    cout << s_KillsoundType9 << endl;
+    cin >> c_KillsoundType_Temp;
+    cout << s_KillsoundLowDmgPitch << endl;
+    cin >> c_KillsoundLowDmgPitch_Temp;
+    cout << s_KillsoundHighDmgPitch << endl;
+    cin >> c_KillsoundHighDmgPitch_Temp;
+    cout << s_Damage << endl;
+    cin >> c_Damage_Temp;
+    cout << s_DamageBatch << endl;
+    cin >> c_DamageBatch_Temp;
+    cout << s_DamageDontOverlap << endl;
+    cin >> c_DamageDontOverlap_Temp;
+    cout << s_DamageR << endl;
+    cin >> c_DamageR_Temp;
+    cout << s_DamageG << endl;
+    cin >> c_DamageG_Temp;
+    cout << s_DamageB << endl;
+    cin >> c_DamageB_Temp;
+    cout << s_RMBActive << endl;
+    cin >> c_RMBActive_Temp;
+    cout << s_RMBPrevious << endl;
+    cin >> c_RMBPrevious_Temp;
+    cout << s_SniperRiflePing << endl;
+    cin >> c_SniperRiflePing_Temp;
+    cout << s_ConciseDisguise << endl;
+    cin >> c_ConciseDisguise_Temp;
+    cout << s_SniperRifleRezoom << endl;
+    cin >> c_SniperRifleRezoom_Temp;
+    cout << s_SniperRifleHideCrosshair << endl;
+    cin >> c_SniperRifleHideCrosshair_Temp;
+    cout << s_MedigunAutoheal << endl;
+    cin >> c_MedigunAutoheal_Temp;
+    cout << s_HealMarker << endl;
+    cin >> c_HealMarker_Temp;
+    cout << s_HelpCallout << endl;
+    cin >> c_HelpCallout_Temp;
+    cout << s_HelpCalloutPercentage << endl;
+    cin >> c_HelpCalloutPercentage_Temp;
+    cout << s_MiniHud << endl;
+    cin >> c_MiniHud_Temp;
+    cout << s_Colorblind << endl;
+    cin >> c_Colorblind_Temp;
+    cout << s_AdvSpecHud << endl;
+    cin >> c_AdvSpecHud_Temp;
+    cout << s_ShowNonStandartItems << endl;
+    cin >> c_ShowNonStandartItems_Temp;
+    cout << s_GlowEffects << endl;
+    cin >> c_GlowEffects_Temp;
+    cout << s_GlowEffectsTeammateRespawn << endl;
+    cin >> c_GlowEffectsTeammateRespawn_Temp;
+    cout << s_3dPlayerModelHud << endl;
+    cin >> c_3dPlayerModelHud_Temp;
+    cout << s_TargetID << endl;
+    cin >> c_TargetID_Temp;
+    cout << s_HideHudDuringFreezecam << endl;
+    cin >> c_HideHudDuringFreezecam_Temp;
+    cout << s_PyrovisionSpec << endl;
+    cin >> c_PyrovisionSpec_Temp;
+
+    return 1;
+}
+
 int masterComfigQuality() 
 {
     system("cls");
@@ -27,6 +149,8 @@ int masterComfigQuality()
 
     b_Mastercomfig = true;
 
+    getOption();
+
     return 1;
 }
 
@@ -42,6 +166,8 @@ int comangliaQuality()
 
     b_Comanglia = true;
 
+    getOption();
+
     return 1;
 }
 
@@ -49,6 +175,8 @@ int m0reQuality()
 {
     // Has No Options
     b_M0re = true;
+
+    getOption();
 
     return 1;
 }
@@ -58,6 +186,8 @@ int b4nnyQuality()
     // Has No Options
     b_B4nny = true;
 
+    getOption();
+
     return 1;
 }
 
@@ -65,6 +195,8 @@ int chrisQuality()
 {
     // Has No Options
     b_Chris = true;
+
+    getOption();
 
     return 1;
 }
@@ -74,6 +206,8 @@ int rhapsodyQuality()
     // Has No Options
     b_Rhapsody = true;
 
+    getOption();
+
     return 1;
 }
 
@@ -81,6 +215,8 @@ int noneQuality()
 {
     // Has No Options
     b_None = true;
+
+    getOption();
 
     return 1;
 }
@@ -204,6 +340,107 @@ int main()
         s_Comanglia_Cinema = s_Comanglia_Cinema_Tr;
         s_Comanglia_Stability = s_Comanglia_Stability_Tr;
         s_Comanglia_Toaster = s_Comanglia_Toaster_Tr;
+        s_EnableVoiceChat = s_EnableVoiceChat_Tr;
+        s_EnableTextChat = s_EnableTextChat_Tr;
+        s_AutoReload = s_AutoReload_Tr;
+        s_FastSwitch = s_FastSwitch_Tr;
+        s_Hitsound = s_Hitsound_Tr;
+        s_HitsoundVolume = s_HitsoundVolume_Tr;
+        s_HitsoundType = s_HitsoundType_Tr;
+        s_HitsoundType1 = s_HitsoundType1_Tr;
+        s_HitsoundType2 = s_HitsoundType2_Tr;
+        s_HitsoundType3 = s_HitsoundType3_Tr;
+        s_HitsoundType4 = s_HitsoundType4_Tr;
+        s_HitsoundType5 = s_HitsoundType5_Tr;
+        s_HitsoundType6 = s_HitsoundType6_Tr;
+        s_HitsoundType7 = s_HitsoundType7_Tr;
+        s_HitsoundType8 = s_HitsoundType8_Tr;
+        s_HitsoundType9 = s_HitsoundType9_Tr;
+        s_HitsoundLowDmgPitch = s_HitsoundLowDmgPitch_Tr;
+        s_HitsoundHighDmgPitch = s_HitsoundHighDmgPitch_Tr;
+        s_Killsound = s_Killsound_Tr;
+        s_KillsoundVolume = s_KillsoundVolume_Tr;
+        s_KillsoundType = s_KillsoundType_Tr;
+        s_KillsoundType1 = s_KillsoundType1_Tr;
+        s_KillsoundType2 = s_KillsoundType2_Tr;
+        s_KillsoundType3 = s_KillsoundType3_Tr;
+        s_KillsoundType4 = s_KillsoundType4_Tr;
+        s_KillsoundType5 = s_KillsoundType5_Tr;
+        s_KillsoundType6 = s_KillsoundType6_Tr;
+        s_KillsoundType7 = s_KillsoundType7_Tr;
+        s_KillsoundType8 = s_KillsoundType8_Tr;
+        s_KillsoundType9 = s_KillsoundType9_Tr;
+        s_KillsoundLowDmgPitch = s_KillsoundLowDmgPitch_Tr;
+        s_KillsoundHighDmgPitch = s_KillsoundHighDmgPitch_Tr;
+        s_Damage = s_Damage_Tr;
+        s_DamageBatch = s_DamageBatch_Tr;
+        s_DamageDontOverlap = s_DamageDontOverlap_Tr;
+        s_DamageR = s_DamageR_Tr;
+        s_DamageG = s_DamageG_Tr;
+        s_DamageB = s_DamageB_Tr;
+        s_RMBActive = s_RMBActive_Tr;
+        s_RMBPrevious = s_RMBPrevious_Tr;
+        s_SniperRiflePing = s_SniperRiflePing_Tr;
+        s_ConciseDisguise = s_ConciseDisguise_Tr;
+        s_SniperRifleRezoom = s_SniperRifleRezoom_Tr;
+        s_SniperRifleHideCrosshair = s_SniperRifleHideCrosshair_Tr;
+        s_MedigunAutoheal = s_MedigunAutoheal_Tr;
+        s_HealMarker = s_HealMarker_Tr;
+        s_HelpCallout = s_HelpCallout_Tr;
+        s_HelpCalloutPercentage = s_HelpCalloutPercentage_Tr;
+        s_MiniHud = s_MiniHud_Tr;
+        s_Colorblind = s_Colorblind_Tr;
+        s_AdvSpecHud = s_AdvSpecHud_Tr;
+        s_ShowNonStandartItems = s_ShowNonStandartItems_Tr;
+        s_GlowEffects = s_GlowEffects_Tr;
+        s_GlowEffectsTeammateRespawn = s_GlowEffectsTeammateRespawn_Tr;
+        s_3dPlayerModelHud = s_3dPlayerModelHud_Tr;
+        s_TargetID = s_TargetID_Tr;
+        s_HideHudDuringFreezecam = s_HideHudDuringFreezecam_Tr;
+        s_PyrovisionSpec = s_PyrovisionSpec_Tr;
+        s_PyrovisBorder = s_PyrovisBorder_Tr;
+        s_PyrovisBorderMode0 = s_PyrovisBorderMode0_Tr;
+        s_PyrovisBorderMode1 = s_PyrovisBorderMode1_Tr;
+        s_PyrovisBorderMode2 = s_PyrovisBorderMode2_Tr;
+        s_PyrovisDistort = s_PyrovisDistort_Tr;
+        s_PyrovisSkyboxDOF = s_PyrovisSkyboxDOF_Tr;
+        s_Romevision = s_Romevision_Tr;
+        s_DisableFloatingHealthBar = s_DisableFloatingHealthBar_Tr;
+        s_TargetIDAlpha = s_TargetIDAlpha_Tr;
+        s_ContractsUI = s_ContractsUI_Tr;
+        s_ContractsUIComp = s_ContractsUIComp_Tr;
+        s_MouseOnScoreboard = s_MouseOnScoreboard_Tr;
+        s_PingAsText = s_PingAsText_Tr;
+        s_AlternateClass = s_AlternateClass_Tr;
+        s_TeamStatusDisplay = s_TeamStatusDisplay_Tr;
+        s_DisableWeather = s_DisableWeather_Tr;
+        s_DisableHTMLMotd = s_DisableHTMLMotd_Tr;
+        s_Viewmodels = s_Viewmodels_Tr;
+        s_ViewmodelsMini = s_ViewmodelsMini_Tr;
+        s_ViewmodelsFOV = s_ViewmodelsFOV_Tr;
+        s_ViewmodelsFlip = s_ViewmodelsFlip_Tr;
+        s_RespawnOnLoadoutChange = s_RespawnOnLoadoutChange_Tr;
+        s_SuicideOnClassChange = s_SuicideOnClassChange_Tr;
+        s_DeleteTempOnShut = s_DeleteTempOnShut_Tr;
+        s_CloseServerBrowserAfterConnect = s_CloseServerBrowserAfterConnect_Tr;
+        s_SyncSteamCloud = s_SyncSteamCloud_Tr;
+        s_ShowTradeRequests = s_ShowTradeRequests_Tr;
+        s_ShowTradeRequests0 = s_ShowTradeRequests0_Tr;
+        s_ShowTradeRequests1 = s_ShowTradeRequests1_Tr;
+        s_ShowTradeRequests2 = s_ShowTradeRequests2_Tr;
+        s_ShowTradeRequests3 = s_ShowTradeRequests3_Tr;
+        s_RawMouse = s_RawMouse_Tr;
+        s_Sensitivity = s_Sensitivity_Tr;
+        s_AudioQuality = s_AudioQuality_Tr;
+        s_ClosedCaption = s_ClosedCaption_Tr;
+        s_SilenceOnBackground = s_SilenceOnBackground_Tr;
+        s_MicrophoneGain = s_MicrophoneGain_Tr;
+        s_NullcancelMove = s_NullcancelMove_Tr;
+        s_Interp = s_Interp_Tr;
+        s_InterpRatio = s_InterpRatio_Tr;
+        s_CMDrate = s_CMDrate_Tr;
+        s_UpdateRate = s_UpdateRate_Tr;
+        s_Rate = s_Rate_Tr;
     }
     else
     {
@@ -230,6 +467,107 @@ int main()
         s_Comanglia_Cinema = s_Comanglia_Cinema_Eng;
         s_Comanglia_Stability = s_Comanglia_Stability_Eng;
         s_Comanglia_Toaster = s_Comanglia_Toaster_Eng;
+        s_EnableVoiceChat = s_EnableVoiceChat_Eng;
+        s_EnableTextChat = s_EnableTextChat_Eng;
+        s_AutoReload = s_AutoReload_Eng;
+        s_FastSwitch = s_FastSwitch_Eng;
+        s_Hitsound = s_Hitsound_Eng;
+        s_HitsoundVolume = s_HitsoundVolume_Eng;
+        s_HitsoundType = s_HitsoundType_Eng;
+        s_HitsoundType1 = s_HitsoundType1_Eng;
+        s_HitsoundType2 = s_HitsoundType2_Eng;
+        s_HitsoundType3 = s_HitsoundType3_Eng;
+        s_HitsoundType4 = s_HitsoundType4_Eng;
+        s_HitsoundType5 = s_HitsoundType5_Eng;
+        s_HitsoundType6 = s_HitsoundType6_Eng;
+        s_HitsoundType7 = s_HitsoundType7_Eng;
+        s_HitsoundType8 = s_HitsoundType8_Eng;
+        s_HitsoundType9 = s_HitsoundType9_Eng;
+        s_HitsoundLowDmgPitch = s_HitsoundLowDmgPitch_Eng;
+        s_HitsoundHighDmgPitch = s_HitsoundHighDmgPitch_Eng;
+        s_Killsound = s_Killsound_Eng;
+        s_KillsoundVolume = s_KillsoundVolume_Eng;
+        s_KillsoundType = s_KillsoundType_Eng;
+        s_KillsoundType1 = s_KillsoundType1_Eng;
+        s_KillsoundType2 = s_KillsoundType2_Eng;
+        s_KillsoundType3 = s_KillsoundType3_Eng;
+        s_KillsoundType4 = s_KillsoundType4_Eng;
+        s_KillsoundType5 = s_KillsoundType5_Eng;
+        s_KillsoundType6 = s_KillsoundType6_Eng;
+        s_KillsoundType7 = s_KillsoundType7_Eng;
+        s_KillsoundType8 = s_KillsoundType8_Eng;
+        s_KillsoundType9 = s_KillsoundType9_Eng;
+        s_KillsoundLowDmgPitch = s_KillsoundLowDmgPitch_Eng;
+        s_KillsoundHighDmgPitch = s_KillsoundHighDmgPitch_Eng;
+        s_Damage = s_Damage_Eng;
+        s_DamageBatch = s_DamageBatch_Eng;
+        s_DamageDontOverlap = s_DamageDontOverlap_Eng;
+        s_DamageR = s_DamageR_Eng;
+        s_DamageG = s_DamageG_Eng;
+        s_DamageB = s_DamageB_Eng;
+        s_RMBActive = s_RMBActive_Eng;
+        s_RMBPrevious = s_RMBPrevious_Eng;
+        s_SniperRiflePing = s_SniperRiflePing_Eng;
+        s_ConciseDisguise = s_ConciseDisguise_Eng;
+        s_SniperRifleRezoom = s_SniperRifleRezoom_Eng;
+        s_SniperRifleHideCrosshair = s_SniperRifleHideCrosshair_Eng;
+        s_MedigunAutoheal = s_MedigunAutoheal_Eng;
+        s_HealMarker = s_HealMarker_Eng;
+        s_HelpCallout = s_HelpCallout_Eng;
+        s_HelpCalloutPercentage = s_HelpCalloutPercentage_Eng;
+        s_MiniHud = s_MiniHud_Eng;
+        s_Colorblind = s_Colorblind_Eng;
+        s_AdvSpecHud = s_AdvSpecHud_Eng;
+        s_ShowNonStandartItems = s_ShowNonStandartItems_Eng;
+        s_GlowEffects = s_GlowEffects_Eng;
+        s_GlowEffectsTeammateRespawn = s_GlowEffectsTeammateRespawn_Eng;
+        s_3dPlayerModelHud = s_3dPlayerModelHud_Eng;
+        s_TargetID = s_TargetID_Eng;
+        s_HideHudDuringFreezecam = s_HideHudDuringFreezecam_Eng;
+        s_PyrovisionSpec = s_PyrovisionSpec_Eng;
+        s_PyrovisBorder = s_PyrovisBorder_Eng;
+        s_PyrovisBorderMode0 = s_PyrovisBorderMode0_Eng;
+        s_PyrovisBorderMode1 = s_PyrovisBorderMode1_Eng;
+        s_PyrovisBorderMode2 = s_PyrovisBorderMode2_Eng;
+        s_PyrovisDistort = s_PyrovisDistort_Eng;
+        s_PyrovisSkyboxDOF = s_PyrovisSkyboxDOF_Eng;
+        s_Romevision = s_Romevision_Eng;
+        s_DisableFloatingHealthBar = s_DisableFloatingHealthBar_Eng;
+        s_TargetIDAlpha = s_TargetIDAlpha_Eng;
+        s_ContractsUI = s_ContractsUI_Eng;
+        s_ContractsUIComp = s_ContractsUIComp_Eng;
+        s_MouseOnScoreboard = s_MouseOnScoreboard_Eng;
+        s_PingAsText = s_PingAsText_Eng;
+        s_AlternateClass = s_AlternateClass_Eng;
+        s_TeamStatusDisplay = s_TeamStatusDisplay_Eng;
+        s_DisableWeather = s_DisableWeather_Eng;
+        s_DisableHTMLMotd = s_DisableHTMLMotd_Eng;
+        s_Viewmodels = s_Viewmodels_Eng;
+        s_ViewmodelsMini = s_ViewmodelsMini_Eng;
+        s_ViewmodelsFOV = s_ViewmodelsFOV_Eng;
+        s_ViewmodelsFlip = s_ViewmodelsFlip_Eng;
+        s_RespawnOnLoadoutChange = s_RespawnOnLoadoutChange_Eng;
+        s_SuicideOnClassChange = s_SuicideOnClassChange_Eng;
+        s_DeleteTempOnShut = s_DeleteTempOnShut_Eng;
+        s_CloseServerBrowserAfterConnect = s_CloseServerBrowserAfterConnect_Eng;
+        s_SyncSteamCloud = s_SyncSteamCloud_Eng;
+        s_ShowTradeRequests = s_ShowTradeRequests_Eng;
+        s_ShowTradeRequests0 = s_ShowTradeRequests0_Eng;
+        s_ShowTradeRequests1 = s_ShowTradeRequests1_Eng;
+        s_ShowTradeRequests2 = s_ShowTradeRequests2_Eng;
+        s_ShowTradeRequests3 = s_ShowTradeRequests3_Eng;
+        s_RawMouse = s_RawMouse_Eng;
+        s_Sensitivity = s_Sensitivity_Eng;
+        s_AudioQuality = s_AudioQuality_Eng;
+        s_ClosedCaption = s_ClosedCaption_Eng;
+        s_SilenceOnBackground = s_SilenceOnBackground_Eng;
+        s_MicrophoneGain = s_MicrophoneGain_Eng;
+        s_NullcancelMove = s_NullcancelMove_Eng;
+        s_Interp = s_Interp_Eng;
+        s_InterpRatio = s_InterpRatio_Eng;
+        s_CMDrate = s_CMDrate_Eng;
+        s_UpdateRate = s_UpdateRate_Eng;
+        s_Rate = s_Rate_Eng;
     }
     
 
