@@ -5412,3 +5412,5 @@ string c_InterpRatio;
 string c_CMDrate;
 string c_UpdateRate;
 string c_Rate;
+
+string c_SelectStart;

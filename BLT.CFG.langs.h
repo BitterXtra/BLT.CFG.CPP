@@ -12,6 +12,7 @@ string s_Start4;
 string s_Start5;
 string s_Start6;
 string s_Start7;
+string s_StartWarning;
 string s_Ready1;
 string s_CFGName;
 string s_SelectGraphic;
@@ -130,6 +131,12 @@ string s_InterpRatio;
 string s_CMDrate;
 string s_UpdateRate;
 string s_Rate;
+string s_TargetID0;
+string s_TargetID1;
+string s_TargetID2;
+string s_TargetID3;
+
+string s_SelectStart;
 
 //Defaults
 
@@ -145,6 +152,7 @@ string s_Start4_Eng = "/-/-/-/-/-/-LightWeight Local TF2 Config Generator/-/-/-/
 string s_Start5_Eng = "/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-";
 string s_Start6_Eng = "/-/-/-/-/-/-/-/-/-/Generator Version v1.0.2-/-/-/-/-/-/-/-/-/-";
 string s_Start7_Eng = "/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-";
+string s_StartWarning_Eng = "Inputting Invalid Values can Corrupt Your TF2 Values. So Input Wisely!";
 string s_Ready1_Eng = "Press Any Key to Continue";
 string s_CFGName_Eng = "Select a Config Name: ";
 
@@ -221,7 +229,11 @@ string s_ShowNonStandartItems_Eng = "Show Non-Standart Items In Spectator (Y/n):
 string s_GlowEffects_Eng = "Use Glow Effects (Y/n):";
 string s_GlowEffectsTeammateRespawn_Eng = "Show Glow Around Teammates After Respawn (Y/n):";
 string s_3dPlayerModelHud_Eng = "Use 3D Playermodel In The HUD (y/N):";
-string s_TargetID_Eng = "Enable TargetID (Y/n):";
+string s_TargetID_Eng = "Spectator TargetID Location (0 to 3, default 3):";
+string s_TargetID0_Eng = "0) Center";
+string s_TargetID1_Eng = "1) Bottom Left";
+string s_TargetID2_Eng = "2) Bottom";
+string s_TargetID3_Eng = "3) Bottom Right";
 string s_HideHudDuringFreezecam_Eng = "Hide HUD During FreezeCam Screenshots (y/N):";
 string s_PyrovisionSpec_Eng = "Enable Pyrovision on Spectator (y/N):";
 string s_PyrovisBorder_Eng = "Pyrovision Border Mode (Default 0):";
@@ -268,6 +280,8 @@ string s_CMDrate_Eng = "Set CMD Rate (typing \"66\" is Recommended):";
 string s_UpdateRate_Eng = "Set Update Rate (typing \"66\" is Recommended):";
 string s_Rate_Eng = "Set Rate (typing \"196608\" is Recommended):";
 
+string s_SelectStart_Eng = "To Load From a File Input 2, To Create New Config Input 1";
+
 //Turkish
 
 string s_Start1_Tr = "/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-";
@@ -277,6 +291,7 @@ string s_Start4_Tr = "/-/-/-/-/-Hafif Boyutlu Yerel TF2 Konfig Jeneratoru-/-/-/-
 string s_Start5_Tr = "/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-";
 string s_Start6_Tr = "/-/-/-/-/-/-/-/-/-Jenerator Versiyonu v1.0.2/-/-/-/-/-/-/-/-/-";
 string s_Start7_Tr = "/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-";
+string s_StartWarning_Tr = "Gecersiz Deger Kullanmak TF2 Kurulumunu Bozabilir Seciminizi Dogru Yazin!";
 string s_Ready1_Tr = "Devam Etmek icin Herhangi Bir Dugmeye Basin";
 string s_CFGName_Tr = "Konfigurasyon Ismi Secin: ";
 
@@ -329,7 +344,7 @@ string s_KillsoundType7_Tr = "6) Bipo";
 string s_KillsoundType8_Tr = "7) Girdap";
 string s_KillsoundType9_Tr = "8) Ezici";
 string s_KillsoundLowDmgPitch_Tr = "Oldurme Sesi Dusuk Hasar Tonu (1'den 255'e, Varsayilan 100):";
-string s_KillsoundHighDmgPitch_Tr = "Killsound High Damage Pitch (1'den 255'e, Varsayilan 100):";
+string s_KillsoundHighDmgPitch_Tr = "Oldurme Sesi Yuksek Hasar Tonu (1'den 255'e, Varsayilan 100):";
 string s_Damage_Tr = "Hasar Numaralarini Aktif Et (Y/n):";
 string s_DamageBatch_Tr = "Hasar Numaralarini Birlestir (Y/n):";
 string s_DamageDontOverlap_Tr = "Hasarin Durum Yazilarinin Ustune Gecmesini Engelle (KRIT! gibi) (Y/n):";
@@ -353,7 +368,11 @@ string s_ShowNonStandartItems_Tr = "Izleyicide Standart Olmayan Itemleri Goster 
 string s_GlowEffects_Tr = "Parlama Efekti Kullan (Y/n):";
 string s_GlowEffectsTeammateRespawn_Tr = "Dogduktan Sonra Takim Arkadaslarini Parlat (Y/n):";
 string s_3dPlayerModelHud_Tr = "3 Boyutlu Oyuncu Modeli Kullan (y/N):";
-string s_TargetID_Tr = "TargetID'yi Aktif Et (Y/n):";
+string s_TargetID_Tr = "Izleyici TargetID Yerlesimi (0'dan 3'e, varsayilan 3):";
+string s_TargetID0_Tr = "0) Orta";
+string s_TargetID1_Tr = "1) Sol Alt";
+string s_TargetID2_Tr = "2) Alt";
+string s_TargetID3_Tr = "3) Sag Alt";
 string s_HideHudDuringFreezecam_Tr = "Donmus Ekran Goruntulerinde HUD'u Sakla (y/N):";
 string s_PyrovisionSpec_Tr = "Izleyicide PyroVizyonu Aktif Et (y/N):";
 string s_PyrovisBorder_Tr = "Pyrovizyon Kenar Modu (Varsayilan 0):";
@@ -382,7 +401,7 @@ string s_SuicideOnClassChange_Tr = "Sinif Degisiminde Intihar Et (Y/n):";
 string s_DeleteTempOnShut_Tr = "Kapatilmada Gecici Dosyalari Sil (Y/n):";
 string s_CloseServerBrowserAfterConnect_Tr = "Sunucuya Baglandiktan Sonra Sunucu Listesini Kapat (Y/n):";
 string s_SyncSteamCloud_Tr = "Steam Cloud ile Sabitle (Y/n):";
-string s_ShowTradeRequests_Tr = "Show Trade Requests (Varsayilan 3)";
+string s_ShowTradeRequests_Tr = "Takas Isteklerini Goster (Varsayilan 3)";
 string s_ShowTradeRequests0_Tr = "0) Sadece Arkadaslar";
 string s_ShowTradeRequests1_Tr = "1) Oyun Ici Oyuncular ve Arkadaslar";
 string s_ShowTradeRequests2_Tr = "2) Kimse";
@@ -399,3 +418,5 @@ string s_InterpRatio_Tr = "Interp Oranini Ayarla (\"1\" yazmak tavsiye edilir):"
 string s_CMDrate_Tr = "Komut Yenilenmesini Ayarla (\"66\" yazmak tavsiye edilir):";
 string s_UpdateRate_Tr = "Yenilenme Oranini Ayarla (\"66\" yazmak tavsiye edilir):";
 string s_Rate_Tr = "Yenilenmeyi Ayarla (\"196608\" yazmak tavsiye edilir):";
+
+string s_SelectStart_Tr = "Bir Dosyadan Yuklemek Icin 2, Yeni Konfig Icin 1 Yazin";
