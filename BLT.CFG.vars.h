@@ -5414,3 +5414,37 @@ string c_UpdateRate;
 string c_Rate;
 
 string c_SelectStart;
+
+string x_Steam32Bit = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Valve\\Steam";
+string x_Steam64Bit = "HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\Valve\\Steam";
+
+string v_Nullcancel = "// Null-Canceling Movement script\n"
+"// Prevents you from pressing two opposing directions, which causes you to stop moving\n"
+"\n"
+"// SCRIPT SETUP — DON'T MESS WITH THESE COMMANDS\n"
+"\n"
+"alias move_bind=wasd\"bind w +mf;bind a +ml;bind s +mb;bind d +mr\"\n"
+"alias move_bind=esdf\"bind e +mf;bind s +ml;bind d +mb;bind f +mr\"\n"
+"alias move_bind=zqsd\"bind z +mf;bind q +ml;bind s +mb;bind d +mr\"\n"
+"alias move_bind=arrows\"bind UPARROW +mf;bind LEFTARROW +ml;bind DOWNARROW +mb;bind RIGHTARROW +mr\"\n"
+"alias move_bind=asdf\"bind a +mf;bind d +ml;bind s +mb;bind f +mr\"\n"
+"alias move_bind=vim\"bind k +mf;bind h +ml;bind j +mb;bind l +mr\"\n"
+"\n"
+"alias +mf\"-back;+forward;alias cf +forward\"\n"
+"alias +mb\"-forward;+back;alias cb +back\"\n"
+"alias +ml\"-moveright;+moveleft;alias cl +moveleft\"\n"
+"alias +mr\"-moveleft;+moveright;alias cr +moveright\"\n"
+"alias -mf\"-forward;cb;alias cf\"\n"
+"alias -mb\"-back;cf;alias cb\"\n"
+"alias -ml\"-moveleft;cr;alias cl\"\n"
+"alias -mr\"-moveright;cl;alias cr\"\n"
+"alias cf\n"
+"alias cb\n"
+"alias cl\n"
+"alias cr\n"
+"\n"
+"// CHANGE THE VALUE BELOW ACCORDING TO YOUR PREFERENCE\n"
+"\n"
+"move_bind=wasd\n"
+"\n"
+"echo\"Null-Canceling Movement script applied\"";

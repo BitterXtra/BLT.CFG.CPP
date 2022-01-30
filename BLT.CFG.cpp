@@ -1,7 +1,10 @@
-﻿#include <iostream>
+﻿#include <Windows.h>
+#include <iostream>
 #include <fstream>
 #include <string>
 #include <conio.h>
+#include <wow64apiset.h>
+#include <processthreadsapi.h>
 
 #include "nlohmann/json.hpp"
 
@@ -12,6 +15,18 @@ using std::cout;
 using std::string;
 using std::cin;
 using std::endl;
+
+BOOL Is64BitWindows()
+{
+#if defined(_WIN64)
+    return TRUE;  
+#elif defined(_WIN32)
+    BOOL f64 = FALSE;
+    return IsWow64Process(GetCurrentProcess(), &f64) && f64;
+#else
+    return FALSE;
+#endif
+}
 
 int parseInformation()
 {
@@ -388,6 +403,126 @@ int parseInformation()
         c_DisableWeather = "tf_particles_disable_weather 0";
     }
 
+    if (c_DisableHTMLMotd_Temp == "y" or c_DisableHTMLMotd_Temp == "Y")
+    {
+        c_DisableHTMLMotd = "cl_disablehtmlmotd 1";
+    }
+    else
+    {
+        c_DisableHTMLMotd = "cl_disablehtmlmotd 0";
+    }
+
+    if (c_Viewmodels_Temp == "n" or c_Viewmodels_Temp == "N")
+    {
+        c_Viewmodels = "r_drawviewmodel 0";
+    }
+    else
+    {
+        c_Viewmodels = "r_drawviewmodel 1";
+    }
+
+    if (c_ViewmodelsMini_Temp == "n" or c_Viewmodels_Temp == "N")
+    {
+        c_ViewmodelsMini = "tf_use_min_viewmodels 0";
+    }
+    else
+    {
+        c_ViewmodelsMini = "tf_use_min_viewmodels 1";
+    }
+
+    c_ViewmodelsFOV = "viewmodel_fov " + c_ViewmodelsFOV_Temp;
+
+    if (c_ViewmodelsFlip_Temp == "y" or c_ViewmodelsFlip_Temp == "Y")
+    {
+        c_ViewmodelsFlip = "cl_flipviewmodels 1";
+    }
+    else
+    {
+        c_ViewmodelsFlip = "cl_flipviewmodels 0";
+    }
+
+    if (c_RespawnOnLoadoutChange_Temp == "n" or c_RespawnOnLoadoutChange_Temp == "N")
+    {
+        c_RespawnOnLoadoutChange = "tf_respawn_on_loadoutchanges 0";
+    }
+    else
+    {
+        c_RespawnOnLoadoutChange = "tf_respawn_on_loadoutchanges 1";
+    }
+    
+    if (c_SuicideOnClassChange_Temp == "n" or c_SuicideOnClassChange_Temp == "N")
+    {
+        c_SuicideOnClassChange = "hud_classautokill 0";
+    }
+    else
+    {
+        c_SuicideOnClassChange = "hud_classautokill 1";
+    }
+
+    if (c_DeleteTempOnShut_Temp == "n" or c_DeleteTempOnShut_Temp == "N")
+    {
+        c_DeleteTempOnShut = "tf_delete_temp_files 0";
+    }
+    else
+    {
+        c_DeleteTempOnShut = "tf_delete_temp_files 1";
+    }
+
+    if (c_CloseServerBrowserAfterConnect_Temp == "n" or c_CloseServerBrowserAfterConnect_Temp == "N")
+    {
+        c_CloseServerBrowserAfterConnect = "sb_close_browser_on_connect 0";
+    }
+    else
+    {
+        c_CloseServerBrowserAfterConnect = "sb_close_browser_on_connect 1";
+    }
+
+    if (c_SyncSteamCloud_Temp == "n" or c_SyncSteamCloud_Temp == "N")
+    {
+        c_SyncSteamCloud = "cl_cloud_settings 0";
+    }
+    else
+    {
+        c_SyncSteamCloud = "cl_cloud_settings 1";
+    }
+
+    c_ShowTradeRequests = "cl_trading_show_requests_from " + c_ShowTradeRequests_Temp;
+
+    if (c_RawMouse_Temp == "n" or c_RawMouse_Temp == "N")
+    {
+        c_RawMouse = "m_rawinput 0";
+    }
+    else
+    {
+        c_RawMouse = "m_rawinput 1";
+    }
+
+    c_Sensitivity = "sensitivity " + c_Sensitivity_Temp;
+
+    if (c_SilenceOnBackground_Temp == "n" or c_SilenceOnBackground_Temp == "N")
+    {
+        c_SilenceOnBackground = "snd_mute_losefocus 0";
+    }
+    else
+    {
+        c_SilenceOnBackground = "snd_mute_losefocus 1";
+    }
+
+    if (c_NullcancelMove_Temp == "n" or c_NullcancelMove_Temp == "N")
+    {
+        c_NullcancelMove = "\n";
+    }
+    else
+    {
+        c_NullcancelMove = v_Nullcancel;
+    }
+
+    c_Interp = "cl_interp " + c_Interp_Temp;
+    c_InterpRatio = "cl_interp_ratio " + c_InterpRatio_Temp;
+    c_CMDrate = "cl_cmdrate " + c_CMDrate_Temp;
+    c_UpdateRate = "cl_updaterate " + c_UpdateRate_Temp;
+    c_Rate = "rate " + c_Rate_Temp;
+
     return 1;
 }
 
@@ -574,14 +709,14 @@ int getOption()
     cin >> c_RawMouse_Temp;
     cout << s_Sensitivity << endl;
     cin >> c_Sensitivity_Temp;
-    cout << s_AudioQuality << endl;
-    cin >> c_AudioQuality_Temp;
-    cout << s_ClosedCaption << endl;
-    cin >> c_ClosedCaption_Temp;
+    //cout << s_AudioQuality << endl;
+    //cin >> c_AudioQuality_Temp;
+    //cout << s_ClosedCaption << endl;
+    //cin >> c_ClosedCaption_Temp;
     cout << s_SilenceOnBackground << endl;
     cin >> c_SilenceOnBackground_Temp;
-    cout << s_MicrophoneGain << endl;
-    cin >> c_MicrophoneGain_Temp;
+    //cout << s_MicrophoneGain << endl;
+    //cin >> c_MicrophoneGain_Temp;
     cout << s_NullcancelMove << endl;
     cin >> c_NullcancelMove_Temp;
     cout << s_Interp << endl;
@@ -792,6 +927,12 @@ int start()
 
 int main()
 {
+    Is64BitWindows();
+
+    cout << "Architecture:" << endl;
+    cout << Is64BitWindows << endl;
+    cout << endl;
+
     system("color 17");
     cout << s_LanguageSelect_Default << endl;
     cout << s_LanguageSupported_Default << endl;
