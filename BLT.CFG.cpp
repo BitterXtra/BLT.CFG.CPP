@@ -1,4 +1,4 @@
-﻿#include <Windows.h>
+#include <Windows.h>
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -26,6 +26,11 @@ BOOL Is64BitWindows()
 #else
     return FALSE;
 #endif
+}
+
+int _sayFuckYou()
+{
+    cout << "FuckYou" << endl;
 }
 
 int parseInformation()
