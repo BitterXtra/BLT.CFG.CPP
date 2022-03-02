@@ -28,9 +28,9 @@ BOOL Is64BitWindows()
 #endif
 }
 
-int _sayFuckYou()
+int compileDataAnSave()
 {
-    cout << "FuckYou" << endl;
+    cout << "Compiling Data..." << endl;
 }
 
 int parseInformation()
